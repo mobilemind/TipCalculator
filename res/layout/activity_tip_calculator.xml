@@ -5,7 +5,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tvBillLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -16,13 +16,13 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/etBillAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignBaseline="@+id/tvBillLabel"
+        android:layout_alignBottom="@+id/tvBillLabel"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_toRightOf="@+id/tvBillLabel"
         android:ems="10"
         android:hint="@string/bill_amount_hint"
         android:inputType="numberDecimal" >
@@ -31,7 +31,7 @@
     </EditText>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnTipMax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -41,27 +41,27 @@
         android:text="@string/tip_max_button_label" />
     
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnTipMed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginRight="15dp"
         android:layout_marginTop="75dp"
-        android:layout_toLeftOf="@+id/button3"
+        android:layout_toLeftOf="@+id/btnTipMax"
         android:text="@string/tip_med_button_label" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnTipMin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginRight="15dp"
         android:layout_marginTop="75dp"
-        android:layout_toLeftOf="@+id/button2"
+        android:layout_toLeftOf="@+id/btnTipMed"
         android:text="@string/tip_min_button_label" />
  
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvTipLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -72,20 +72,20 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/etTipAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignBaseline="@+id/tvTipLabel"
+        android:layout_alignBottom="@+id/tvTipLabel"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/textView2"
+        android:layout_toRightOf="@+id/tvTipLabel"
         android:ems="10"
         android:hint="@string/tip_amount_hint"
         android:inputType="numberDecimal" >
     </EditText>
     
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvTotalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -96,13 +96,13 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/etTotalAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignBaseline="@+id/tvTotalLabel"
+        android:layout_alignBottom="@+id/tvTotalLabel"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/textView3"
+        android:layout_toRightOf="@+id/tvTotalLabel"
         android:ems="10"
         android:hint="@string/grand_total_hint"
         android:inputType="numberDecimal" >
