@@ -19,7 +19,6 @@ public class TipCalculatorActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // "@+id/etBillAmount", "@+id/etTipAmount" , "@+id/etTotalAmount"
         setContentView(R.layout.activity_tip_calculator);
         etBillAmount = (EditText) findViewById(R.id.etBillAmount);
         etTipAmount = (EditText) findViewById(R.id.etTipAmount);
@@ -31,19 +30,19 @@ public class TipCalculatorActivity extends Activity {
     	// determine percentage based on btnId
     	double tipPercent = 0.10d;
     	if (v.getId() == R.id.btnTipMed) {
-    	  tipPercent = 0.15d;
+    		tipPercent = 0.15d;
     	}
     	else if (v.getId() == R.id.btnTipMax) {
-    	  tipPercent = 0.20d;
+    		tipPercent = 0.20d;
     	}
     	// get bill amount and reformat
     	String billString = etBillAmount.getText().toString();
     	double billValue = Double.parseDouble(billString);
     	etBillAmount.setText(df.format(billValue));
     	// calculate & reformat the tip & the total
-    	double tipValue= billValue * tipPercent ;
+    	double tipValue= billValue * tipPercent;
     	etTipAmount.setText(df.format(tipValue));
-    	double totalValue = billValue + tipValue ;
-    	etTotalAmount.setText(df.format(totalValue));   	
+    	double totalValue = billValue + tipValue;
+    	etTotalAmount.setText(df.format(totalValue));
     }
 }
