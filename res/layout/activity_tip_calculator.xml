@@ -39,7 +39,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginTop="75dp"
         android:text="@string/tip_max_button_label"
-        android:onClick="tipBtnMaxClicked" />
+        android:onClick="tipBtnClicked" />
     
     <Button
         android:id="@+id/btnTipMed"
@@ -50,7 +50,7 @@
         android:layout_marginTop="75dp"
         android:layout_toLeftOf="@+id/btnTipMax"
         android:text="@string/tip_med_button_label" 
-        android:onClick="tipBtnMedClicked" />
+        android:onClick="tipBtnClicked" />
 
     <Button
         android:id="@+id/btnTipMin"
@@ -61,7 +61,7 @@
         android:layout_marginTop="75dp"
         android:layout_toLeftOf="@+id/btnTipMed"
         android:text="@string/tip_min_button_label"
-        android:onClick="tipBtnMinClicked"  />
+        android:onClick="tipBtnClicked"  />
  
     <TextView
         android:id="@+id/tvTipLabel"
