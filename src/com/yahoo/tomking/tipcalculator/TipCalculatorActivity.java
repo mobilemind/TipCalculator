@@ -16,7 +16,6 @@ public class TipCalculatorActivity extends Activity {
 	private EditText etTotalAmount;
 	private DecimalFormat df = new DecimalFormat("0.00");
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +29,7 @@ public class TipCalculatorActivity extends Activity {
     /** Called when the user touches a button */
     public void tipBtnClicked(View v) {
     	// determine percentage based on btnId
-    	double tipPercent = 0.10d;
+    	double tipPercent;
     	switch (v.getId()) {
 		case R.id.btnTipMax:
 			tipPercent = 0.20d;
@@ -39,13 +38,11 @@ public class TipCalculatorActivity extends Activity {
 			tipPercent = 0.15d;
 			break;
 		case R.id.btnTipMin:
-			tipPercent = 0.10d;
-			break;
 		default:
 			tipPercent = 0.10d;
 			break;
 		}
-    	// get bill amount and refromat
+    	// get bill amount and reformat
     	String billString = etBillAmount.getText().toString();
     	double billValue = Double.parseDouble(billString);
     	billString = df.format(billValue);
