@@ -29,18 +29,13 @@ public class TipCalculatorActivity extends Activity {
     public void tipBtnClicked(View v) {
     	// determine percentage based on btnId
     	double tipPercent = 0.10d;
-    	if (v.getId() == R.id.btnTipMed) {
-    		tipPercent = 0.15d;
-    	}
-    	else if (v.getId() == R.id.btnTipMax) {
-    		tipPercent = 0.20d;
-    	}
+    	if (v.getId() == R.id.btnTipMed) tipPercent = 0.15d;
+    	else if (v.getId() == R.id.btnTipMax) tipPercent = 0.20d;
     	// get bill amount and reformat
-    	String billString = etBillAmount.getText().toString();
-    	double billValue = Double.parseDouble(billString);
+    	double billValue = Double.parseDouble(etBillAmount.getText().toString());
     	etBillAmount.setText(df.format(billValue));
     	// calculate & reformat the tip & the total
-    	double tipValue= billValue * tipPercent;
+    	double tipValue = billValue * tipPercent;
     	etTipAmount.setText(df.format(tipValue));
     	double totalValue = billValue + tipValue;
     	etTotalAmount.setText(df.format(totalValue));
