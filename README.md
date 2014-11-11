@@ -4,7 +4,7 @@ Tip Calculator
 ## Overview
 A Tip Calculator utility app which allows a user to calculate the appropriate tip based on the total amount entered.
 
-Time Spent:
+Time Spent: 3.5 hours
 
 
 ## User Stories
@@ -25,6 +25,6 @@ Time Spent:
 
 ## Walkthroughs
 
-![GIF Walkthrough](walkthrough-gifs/SimpleToDo.gif)
+![GIF Walkthrough](TipCalculator.gif)
 
 GIFs created by LiceCap <http://www.cockos.com/licecap/>
