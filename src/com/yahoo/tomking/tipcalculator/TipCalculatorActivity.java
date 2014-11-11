@@ -29,31 +29,21 @@ public class TipCalculatorActivity extends Activity {
     /** Called when the user touches a button */
     public void tipBtnClicked(View v) {
     	// determine percentage based on btnId
-    	double tipPercent;
-    	switch (v.getId()) {
-		case R.id.btnTipMax:
-			tipPercent = 0.20d;
-			break;
-		case R.id.btnTipMed:
-			tipPercent = 0.15d;
-			break;
-		case R.id.btnTipMin:
-		default:
-			tipPercent = 0.10d;
-			break;
-		}
+    	double tipPercent = 0.10d;
+    	if (v.getId() == R.id.btnTipMed) {
+    	  tipPercent = 0.15d;
+    	}
+    	else if (v.getId() == R.id.btnTipMax) {
+    	  tipPercent = 0.20d;
+    	}
     	// get bill amount and reformat
     	String billString = etBillAmount.getText().toString();
     	double billValue = Double.parseDouble(billString);
-    	billString = df.format(billValue);
-    	// calculate tip & total, then format
+    	etBillAmount.setText(df.format(billValue));
+    	// calculate & reformat the tip & the total
     	double tipValue= billValue * tipPercent ;
+    	etTipAmount.setText(df.format(tipValue));
     	double totalValue = billValue + tipValue ;
-    	String tipString = df.format(tipValue);
-    	String totalString = df.format(totalValue);   	
-    	// slam results into fields
-    	etBillAmount.setText(billString.toCharArray(), 0, billString.length());
-    	etTipAmount.setText(tipString.toCharArray(), 0, tipString.length());
-    	etTotalAmount.setText(totalString.toCharArray(), 0, totalString.length());
+    	etTotalAmount.setText(df.format(totalValue));   	
     }
 }
