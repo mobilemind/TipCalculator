@@ -27,10 +27,8 @@ public class TipCalculatorActivity extends Activity {
     
     /** Called when the user touches a button */
     public void tipBtnClicked(View v) {
-    	// determine percentage based on btnId
-    	double tipPercent = 0.10d;
-    	if (v.getId() == R.id.btnTipMed) tipPercent = 0.15d;
-    	else if (v.getId() == R.id.btnTipMax) tipPercent = 0.20d;
+    	// determine percentage based on android:tag value of Button view
+    	double tipPercent = Double.parseDouble(v.getTag().toString());
     	// get bill amount and reformat
     	double billValue = Double.parseDouble(etBillAmount.getText().toString());
     	etBillAmount.setText(df.format(billValue));
