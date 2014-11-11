@@ -10,10 +10,10 @@ Time Spent:
 ## User Stories
 
 ### Mandatory
-1. [ ] User is displayed the tip of specified percentage for specified entered amount
-2. [ ] User enters the total amount of the transaction
-3. [ ] User can select between tip amounts (i.e 10%, 15%, 20%)
-4. [ ] Upon selecting tip amount, formatted tip value is displayed
+1. [X] User is displayed the tip of specified percentage for specified entered amount
+2. [X] User enters the total amount of the transaction
+3. [X] User can select between tip amounts (i.e 10%, 15%, 20%)
+4. [X] Upon selecting tip amount, formatted tip value is displayed
 
 ### Optional
 5. [ ] User changes the total amount and updated tip is reflected automatically

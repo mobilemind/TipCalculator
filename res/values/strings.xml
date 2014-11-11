@@ -4,15 +4,12 @@
     <string name="app_name">Tip Calculator</string>
     <string name="bill_amount_label">Bill amount:</string>
     <string name="bill_amount_hint">Enter amount on bill</string>
-    <string name="bill_amount_text">0.0</string>
     <string name="tip_min_button_label">10%</string>
     <string name="tip_med_button_label">15%</string>
     <string name="tip_max_button_label">20%</string>
     <string name="tip_amount_label">Tip amount:</string>
     <string name="tip_amount_hint">Select a tip level</string>
-    <string name="tip_amount_text">0.0</string>
     <string name="grand_total_label">Grand total:</string>
     <string name="grand_total_hint">Enter amount &amp; set tip</string>
-    <string name="grand_total_text">0.0</string>
     
 </resources>
