@@ -4,8 +4,6 @@ import java.text.DecimalFormat;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
@@ -14,7 +12,7 @@ public class TipCalculatorActivity extends Activity {
 	private EditText etBillAmount;
 	private EditText etTipAmount;
 	private EditText etTotalAmount;
-	private DecimalFormat df = new DecimalFormat("0.00");
+	private final DecimalFormat df = new DecimalFormat("0.00");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
